@@ -1,0 +1,280 @@
+body{
+    background-color: #faefe8;
+}
+
+*
+{
+    margin:0px;
+    padding:0px;
+}
+
+:root{
+--headingFont:'Lobster';
+--paraFont:'Norican';
+
+}
+
+html{
+    scroll-behavior: smooth;
+    /* Allows a smooth animated "scroll effect" between elements within the scrolling box. */
+}
+
+/* Navigation Bar */
+#navbar
+{
+    width:100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+#logo img{
+    width:75px;
+    height:70px;
+    margin:2px 5px;
+    margin-right:15px;
+}
+
+#navbar ul
+{
+    display: flex; 
+    font-family: var(--paraFont);
+}
+
+#navbar li
+{
+    font-size:1.1rem;
+    list-style: none;
+}
+
+#navbar ul li a
+{
+    color:white;
+    text-decoration: none;
+    display: block;
+}
+
+#navbar ul li a:hover
+{
+    color:rgb(222, 126, 0);
+}
+
+#navbar ul li
+{
+    color:rgb(255, 255, 255);
+    padding-right:20px;
+}
+
+/* Home Section */
+#home
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding:100px;
+color:white;
+}
+
+#home::before
+{
+    content:"";
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 400px;
+    z-index: -1;
+    background: url('../images/foodbg.jpg') no-repeat center center/cover;
+    opacity:0.99;
+}
+
+h1
+{
+    font-family:var(--headingFont);
+    font-size:2rem;
+    text-align: center;
+    padding:3px;
+}
+
+h2
+{
+    font-family:var(--headingFont);
+    font-size:1.7rem;
+    margin:15px;
+}
+
+p
+{
+    font-family:var(--paraFont);
+    font-size:1.1rem;
+    color:rgb(215, 215, 215);
+    padding:2px;
+    text-align: center;
+}
+
+.btn
+{
+    font-family: var(--paraFont);
+    padding:6px 17px;
+    margin:15px;
+    border-radius: 25px;
+    background-color: orange;
+    border:3px solid rgb(222, 126, 0);
+    cursor:pointer;
+}
+
+.btn:hover
+{
+    background-color: rgb(244, 146, 0);
+
+}
+
+/* Services */
+#services
+{
+    display: flex;
+    flex-direction: column;
+    margin-top:30px;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border:2px solid rgb(222, 126, 0);
+    border-radius: 40px;
+    padding:5px 8px;
+    text-align: center;
+    margin:15px 10px;
+}
+
+.box img
+{
+width:200px;
+height:180px;
+}
+
+.box p
+{
+    color:black;
+}
+
+.btn1
+{
+    padding:5px 10px;
+}
+
+/* Clients */
+#clients
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:370px;
+}
+
+#clients::before
+{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height:370px;
+    z-index: -1;
+    background: url('../images/bg.jpg') no-repeat center center/cover;
+    opacity:0.6;
+}
+
+.client-images
+{
+    display: flex;
+}
+
+.client-images img
+{
+    height:100px;
+    padding-top:20px;
+    padding-right:100px;
+}
+
+/* Contact Us */
+#contact{
+position: relative;
+}
+
+#contact::before{
+content:"";
+position: absolute;
+width:100%;
+height:100%;
+z-index: -1;
+opacity:0.5;
+background: url('../images/contact.jpg') no-repeat center center/cover;
+}
+
+.contact-form 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:34px;
+}
+
+.contact-form  form{
+    width: 40%;
+}
+
+.contact-form input, .contact-form textarea{
+    width:100%;
+    padding:0.5rem;
+    font-family:var(--paraFont);
+    font-size:1rem;
+    border-radius: 10px;
+    border:2px solid rgb(121, 78, 4);
+    margin:8px;
+}
+
+.contact-form .btn
+{
+width:120px;
+font-size:1rem;
+}
+
+label{
+    font-family:var(--paraFont);
+    font-size:1rem;
+}
+
+input:text
+{
+    font-family:var(--paraFont);
+    font-size:1rem;
+    border:2px solid orangered;
+}
+
+/* Footer */
+footer
+{
+    background-color: black;
+    color:white;
+    padding:6px;
+}
+
+footer h3
+{
+    font-family:var(--paraFont);
+    font-size:0.9rem;
+    text-align: center;
+    letter-spacing:2px;
+}
